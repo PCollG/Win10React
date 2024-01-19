@@ -1,0 +1,15 @@
+.taskbarShowDesktopButton {
+    height: 100%;
+    width: 13px;
+    border: none;
+    border-left: solid 1px #a3aab7;
+    background-color: transparent;
+}
+
+.taskbarShowDesktopButton:hover {
+    background-color: #e0eff5;
+}
+
+.taskbarShowDesktopButton:active {
+    background-color: #d5e8f1;
+}

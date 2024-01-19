@@ -1,6 +1,8 @@
 import React from 'react'
 import TaskbarButton from '@components/TaskbarButton/TaskbarButton'
 import TaskbarSearchInput from '@components/TaskbarSearchInput/taskbarSearchInput'
+import TaskbarShowDesktopButton from '@components/TaskbarShowDesktopButton/TaskbarShowDesktopButton'
+import commentIcon from '@assets/images/comment.png'
 import commonStyles from '../common.module.css'
 import edgeIcon from '@assets/svg/edge_logo.svg'
 import explorerIcon from '@assets/images/explorer.png'
@@ -28,8 +30,8 @@ export const Taskbar = ({}: TaskbarProps) => {
                 <div>Weather</div>
                 <div>TrayIcons</div>
                 <div>Hour</div>
-                <div>Notifications</div>
-                <div>DesktopButton</div>
+                <TaskbarButton icon={commentIcon} iconWidth={'24px'} />
+                <TaskbarShowDesktopButton />
             </div>
         </div>
     )
