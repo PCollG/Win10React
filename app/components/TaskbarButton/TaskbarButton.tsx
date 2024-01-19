@@ -15,14 +15,16 @@ const TaskbarButton = ({
     isActive,
 }: TTaskbarButtonProps) => {
     return (
-        <div className={`${styles.taskbarButton} ${isActive && styles.active}`}>
+        <button
+            className={`${styles.taskbarButton} ${isActive && styles.active}`}
+        >
             <Image
                 src={icon}
                 alt="Windows logo"
                 className={styles.icon}
                 style={{ width: iconWidth, height: iconHeight }}
             />
-        </div>
+        </button>
     )
 }
 
