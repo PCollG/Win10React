@@ -21,7 +21,7 @@ export const Taskbar = ({}: TaskbarProps) => {
                         iconWidth={'25px'}
                         isActive
                     />
-                    <TaskbarButton icon={explorerIcon} iconWidth={'24px'} />T
+                    <TaskbarButton icon={explorerIcon} iconWidth={'24px'} />
                 </div>
             </div>
             <div className={commonStyles.flex}>
