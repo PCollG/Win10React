@@ -1,16 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Desktop } from './Desktop'
+import { Taskbar } from './Taskbar'
 
 const meta = {
-    title: 'Desktop/Desktop',
-    component: Desktop,
-    parameters: {
-        layout: 'centered',
-    },
+    title: 'Taskbar/Taskbar',
+    component: Taskbar,
     tags: ['autodocs'],
     argTypes: {},
-} satisfies Meta<typeof Desktop>
+} satisfies Meta<typeof Taskbar>
 
 export default meta
 type Story = StoryObj<typeof meta>
