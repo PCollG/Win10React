@@ -1,0 +1,42 @@
+.taskbarSearchInput {
+    height: 100%;
+    width: 290px;
+    padding: 0 12px;
+    display: flex;
+    gap: 12px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+}
+
+.taskbarSearchInput:hover {
+    border: solid 2px #b4b4b4;
+}
+
+.taskbarSearchInput:focus-within {
+    border: solid 2px #0078d7;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #fff; */
+    /* width: 50px;
+    height: 100%;
+    background-color: #e0eff5;
+    border: 1px solid #e0eff5;
+    border-radius: 4px 0 0 4px; */
+}
+
+.icon {
+    width: 25px;
+}
+.input {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+
+    /* padding: 0 12px; */
+}

@@ -1,0 +1,39 @@
+.taskbarButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.taskbarButton.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    height: 2px;
+    background-color: #0078d7;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.taskbarButton.active:hover:after {
+    width: 100%;
+}
+
+.taskbarButton:hover {
+    background-color: #e0eff5;
+    cursor: pointer;
+}
+
+.taskbarButton:active {
+    background-color: #d5e8f1;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+}

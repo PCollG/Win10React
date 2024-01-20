@@ -1,0 +1,23 @@
+.taskbarDate {
+    height: 100%;
+    min-width: 65px;
+    padding: 0 7px;
+    font-size: 0.8rem;
+    line-height: 1.125rem;
+    font-weight: 500;
+
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.taskbarDate:hover {
+    background-color: #e0eff5;
+}
+
+.taskbarDate:active {
+    background-color: #d5e8f1;
+}
