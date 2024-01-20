@@ -1,5 +1,6 @@
 import React from 'react'
 import TaskbarButton from '@components/TaskbarButton/TaskbarButton'
+import TaskbarDate from '@components/TaskbarDate/TaskbarDate'
 import TaskbarSearchInput from '@components/TaskbarSearchInput/taskbarSearchInput'
 import TaskbarShowDesktopButton from '@components/TaskbarShowDesktopButton/TaskbarShowDesktopButton'
 import commentIcon from '@assets/images/comment.png'
@@ -29,7 +30,7 @@ export const Taskbar = ({}: TaskbarProps) => {
             <div className={commonStyles.flex}>
                 <div>Weather</div>
                 <div>TrayIcons</div>
-                <div>Hour</div>
+                <TaskbarDate />
                 <TaskbarButton icon={commentIcon} iconWidth={'24px'} />
                 <TaskbarShowDesktopButton />
             </div>
