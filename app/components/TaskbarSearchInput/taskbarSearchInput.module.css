@@ -20,16 +20,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #fff; */
-    /* width: 50px;
-    height: 100%;
-    background-color: #e0eff5;
-    border: 1px solid #e0eff5;
-    border-radius: 4px 0 0 4px; */
 }
 
 .icon {
     width: 25px;
+    height: auto;
 }
 .input {
     height: 100%;
