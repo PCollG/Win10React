@@ -3,7 +3,7 @@
     height: 100dvh;
     display: block;
 
-    background-image: url('./../../../public/assets/images/wallpapers/default_wallpaper_custom.jpg');
+    background-image: url('./../../../public/assets/images/wallpapers/default_wallpaper_custom.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center right;

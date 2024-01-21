@@ -1,4 +1,7 @@
+'use client'
+
 import React from 'react'
+import StartMenu from '@components/StartMenu/StartMenu'
 import TaskbarButton from '@components/TaskbarButton/TaskbarButton'
 import TaskbarDate from '@components/TaskbarDate/TaskbarDate'
 import TaskbarSearchInput from '@components/TaskbarSearchInput/taskbarSearchInput'
@@ -13,27 +16,36 @@ import windowsLogo from '@assets/svg/windows.svg'
 interface TaskbarProps {}
 
 export const Taskbar = ({}: TaskbarProps) => {
+    const [isOpenStartMenu, setIsOpenStartMenu] = React.useState(false)
+
     return (
-        <div className={styles.taskbar}>
-            <div className={commonStyles.flex}>
-                <TaskbarButton icon={windowsLogo} iconWidth="18px" />
-                <TaskbarSearchInput />
-                <div className={styles.iconsContainer}>
+        <>
+            {isOpenStartMenu && <StartMenu />}
+            <div className={styles.taskbar}>
+                <div className={commonStyles.flex}>
                     <TaskbarButton
-                        icon={edgeIcon}
-                        iconWidth={'25px'}
-                        isActive
+                        icon={windowsLogo}
+                        iconWidth="18px"
+                        onClick={() => setIsOpenStartMenu(!isOpenStartMenu)}
                     />
-                    <TaskbarButton icon={explorerIcon} iconWidth={'24px'} />
+                    <TaskbarSearchInput />
+                    <div className={styles.iconsContainer}>
+                        <TaskbarButton
+                            icon={edgeIcon}
+                            iconWidth={'25px'}
+                            isActive
+                        />
+                        <TaskbarButton icon={explorerIcon} iconWidth={'24px'} />
+                    </div>
+                </div>
+                <div className={commonStyles.flex}>
+                    {/* <div>Weather</div> */}
+                    {/* <div>TrayIcons</div> */}
+                    <TaskbarDate />
+                    <TaskbarButton icon={commentIcon} iconWidth={'24px'} />
+                    <TaskbarShowDesktopButton />
                 </div>
             </div>
-            <div className={commonStyles.flex}>
-                <div>Weather</div>
-                <div>TrayIcons</div>
-                <TaskbarDate />
-                <TaskbarButton icon={commentIcon} iconWidth={'24px'} />
-                <TaskbarShowDesktopButton />
-            </div>
-        </div>
+        </>
     )
 }
