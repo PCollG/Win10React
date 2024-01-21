@@ -28,6 +28,18 @@
     overflow-y: hidden;
 }
 
+.programsButtons::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.programsButtons::-webkit-scrollbar {
+    width: 2px;
+}
+
+.programsButtons::-webkit-scrollbar-thumb {
+    background-color: #7c7c7c;
+}
+
 .programsButtons:hover {
     overflow-y: auto;
 }
@@ -35,8 +47,24 @@
 .windowsTiles {
     height: 100%;
     width: 330px;
+    overflow: hidden;
 }
 
+.windowsTiles:hover {
+    overflow-y: auto;
+}
+
+.windowsTiles::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.windowsTiles::-webkit-scrollbar {
+    width: 2px;
+}
+
+.windowsTiles::-webkit-scrollbar-thumb {
+    background-color: #7c7c7c;
+}
 .windowsTilesCont {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

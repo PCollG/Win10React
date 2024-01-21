@@ -20,7 +20,7 @@ const StartMenu = ({}: TStartMenuProps) => {
                 </div>
             </div>
             <div className={styles.programsButtons}>
-                {[...Array(300)].map((_, i) => (
+                {[...Array(50)].map((_, i) => (
                     <TaskbarButton
                         icon={edgeIcon}
                         value="Microsoft Edge"
@@ -32,12 +32,9 @@ const StartMenu = ({}: TStartMenuProps) => {
             </div>
             <div className={styles.windowsTiles}>
                 <div className={styles.windowsTilesCont}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    {[...Array(50)].map((_, i) => (
+                        <div key={`${_}-${i}`} />
+                    ))}
                 </div>
             </div>
         </div>
